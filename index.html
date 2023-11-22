@@ -1,1 +1,101 @@
-"Hello World" 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" />
+  <title>WeHelp Submition</title>
+</head>
+
+<body>
+  <main>
+    <div class="form-container">
+      <h1 id="title">WeHelp Submition</h1>
+      <p id="description">practice makes perfect</p>
+      <hr>
+      <form id="survey-form" method="post" action="">
+        <fieldset>
+          <label id="name-label" for="name">Name <input id="name" name="name" type="text" required
+              placeholder="Enter your name" /></label>
+          <label id="email-label" for="email">Email <input id="email" name="email" type="email" required
+              placeholder="Enter your email" /></label>
+          <label id="number-label" for="number">Age(optional) <input id="number" name="number" type="number" max="120"
+              min="18" placeholder="Age" /></label>
+          <label for="dropdown">How did you hear about us?
+            <select id="dropdown" name="dropdown">
+              <option value="">(select one)</option>
+              <option value="1">FB</option>
+              <option value="2">YouTube</option>
+              <option value="3">Friends</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Current employment status (required)</legend>
+          <label for="student-status"><input id="student-status" type="radio" name="employment-status" class="inline"
+              checked value="student" />
+            Student</label>
+          <label for="employed-status"><input id="employed-status" type="radio" name="employment-status" class="inline"
+              value="employed" />
+            employed</label>
+          <label for="unemployed-status"><input id="unemployed-status" type="radio" name="employment-status"
+              class="inline" value="unemployed" />
+            unemployed</label>
+        </fieldset>
+        <fieldset>
+          <legend>Programming languages self-learned</legend>
+          <input id="Javascript" type="checkbox" name="programming-language" value="Javascript" class="inline"> <label
+            for="Javascript" class="inline">Javascript</label>
+          <input id="Python" type="checkbox" name="programming-language" value="Python" class="inline"> <label
+            for="Python" class="inline">Python</label>
+          <input id="Clang" type="checkbox" name="programming-language" value="Clang" class="inline"> <label for="Clang"
+            class="inline">Clang</label>
+        </fieldset>
+        <fieldset>
+          <label for="bio">Provide a bio within two hundred words:
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="effort">What efforts have you made to become a software engineer?
+            <textarea id="effort" name="effort" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="arrange">If participating in this project, how would you arrange your study time?
+            <textarea id="arrange" name="arrange" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="company">Do you have a software company in mind that you would like to join? Why do you want to
+            join that company?
+            <textarea id="company" name="company" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="emotion">Please describe an experience that generated significant negative emotions and how did
+            you handle those emotions?
+            <textarea id="emotion" name="emotion" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="insight">Regarding this application webpage, share a technical insight during development.
+            <textarea id="insight" name="insight" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="moreEffort">Since the last application, what additional efforts have you made until now? (No need
+            to answer if it's the first
+            application)
+            <textarea id="moreEffort" name="moreEffort" rows="3" cols="30"
+              placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="extra">Anything else you would like to tell us?
+            <textarea id="extra" name="extra" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+          </label>
+          <label for="works">If you have specific works, please share them with us.
+            <input id="works" type="file" name="file" />
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
